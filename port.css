@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 800;
+  padding: 2%;
+}
+
+h4 {
+  font-size: 1.17em;
+}
+
+p {
+  padding: 7.5%;
+}
+
+nav,
+footer,
+.navlinks,
+#contact .arrows {
+  background-color: #e8fffe;
+}
+
+footer {
+  padding-top: 2%;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  padding: 1%;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 50px;
+  z-index: 1;
+}
+
+.navlinks {
+  padding: 5px 20px 5% 0;
+  line-height: 2;
+  text-align: right;
+  width: 215px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: none;
+}
+
+.navlinks a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.fa-bars {
+  color: black;
+}
+
+#home {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.menu {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+#hamburger {
+  display: block;
+}
+
+#cross {
+  display: none;
+}
+
+.sr-only {
+  visibility: hidden;
+}
+
+a ~ a {
+  text-decoration: none;
+}
+
+header {
+  padding: 20% 5% 10% 5%;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(31, 122, 140);
+  background: url(img/hero.jpg) center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  text-shadow: -1px -1px 0 rgb(31, 122, 140), 1px -1px 0 rgb(31, 122, 140),
+    -1px 1px 0 rgb(31, 122, 140), 1px 1px 0 rgb(31, 122, 140);
+}
+
+header h1 {
+  padding: 5% 5% 10%;
+}
+
+header .arrows {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .fa-chevron-down,
+.about .fa-chevron-down,
+.white {
+  color: white;
+}
+
+.anchor-landing {
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
+.about {
+  min-height: 200px;
+  padding: 5% 0 2%;
+  background-color: #023c40;
+  color: white;
+}
+
+.about p {
+  text-align: left;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1%;
+}
+
+.headshot {
+  object-fit: contain;
+  max-width: 50%;
+  padding: 0;
+}
+
+.samples {
+  background-color: #1f7a8c;
+  padding: 3% 0 5% 0;
+  color: #ffffff;
+}
+
+.samples h2 {
+  padding-bottom: 5%;
+}
+
+.sample_img {
+  padding: 5% 0 2.5%;
+  width: 90%;
+  height: 90%;
+}
+
+.livepage {
+  color: #1f7a8c;
+}
+
+.project {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e8fffe;
+  color: black;
+  padding: 5% 0;
+  margin-bottom: 5%;
+}
+
+.samples > div:last-child {
+  margin-bottom: 0;
+}
+
+.fa-html5,
+.fa-css3-alt,
+.fa-js-square {
+  padding-bottom: 3px;
+}
+
+.tools {
+  position: relative;
+  /*padding-right: 80px;
+  padding-right: 5px;*/
+}
+
+.jquery,
+.postgres {
+  position: absolute;
+  bottom: 0;
+  width: 85px;
+  height: 85px;
+  margin-left: 5px;
+}
+
+.project p {
+  text-align: center;
+  padding: 5% 5%;
+}
+
+a {
+  color: black;
+}
+
+#contact > a {
+  padding: 0% 2%;
+}
+
+#contact .fa-chevron-up {
+  padding: 2%;
+}
+
+.invert {
+  color: #1f7a8c;
+}
+
+.hidden {
+  background: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 650px) {
+  header {
+    padding: 10% 5% 2% 5%;
+  }
+
+  header h1 {
+    padding: 10% 5%;
+  }
+
+  #hamburger,
+  #cross {
+    display: none !important;
+  }
+
+  .navlinks {
+    text-align: right;
+    display: inline !important;
+    position: relative;
+    padding: 0;
+    top: 0;
+  }
+
+  .navlinks li {
+    display: inline;
+    padding: 1%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    padding: 5% 5% 2%;
+  }
+
+  #about .arrows {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .headshot {
+    padding: 4% 0 1% 5%;
+    object-fit: contain;
+    max-width: 40%;
+  }
+
+  .projectText {
+    float: left;
+    padding-right: 15px;
+    width: 40%;
+  }
+
+  .project {
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .project p {
+    padding: 5% 5% 5% 20%;
+    text-align: left;
+  }
+
+  .sample_img {
+    width: 50%;
+    padding: 0;
+  }
+}

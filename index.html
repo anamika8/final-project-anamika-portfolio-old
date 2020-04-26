@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-143506234-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-143506234-2");
+    </script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Portfolio of work for Anamika Nayak, web developer. Webpage includes images of sample work, links to GitHub and live pages, as well as contact information."
+    />
+    <meta
+      name="keywords"
+      content="Web Developer, Software Engineer, UI Automation Engineer, HTML, CSS, JavaScript, jQuery, Node.js, Express, Mocha, Mongo, React, Protractor"
+    />
+    <title>Anamika Nayak Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!--<link
+      href="//db.onlinewebfonts.com/c/4ff040d5809ef8c793d5dd1397cb5c9f?family=font-mfizz"
+      rel="stylesheet"
+      type="text/css"
+    />-->
+    <link rel="stylesheet" href="font-mfizz-2.4.1/font-mfizz.css" />
+    <link rel="stylesheet" type="text/css" href="port.css" />
+  </head>
+  <body>
+    <nav role="navigation">
+      <a id="home" href="#intro">
+        <i class="icon-looking fa-2x"></i>
+        <span class="sr-only">Home</span>
+      </a>
+
+      <button
+        id="hamburger"
+        class="menu hidden"
+        onclick="menu()"
+        aria-label="Open the menu"
+      >
+        <i class="fas fa-bars fa-2x" aria-hidden="true"></i>
+        <span class="sr-only">Nav Menu Button</span>
+      </button>
+
+      <button
+        id="cross"
+        class="menu hidden"
+        onclick="closeMenu()"
+        aria-label="Close the menu"
+      >
+        <i class="fas fa-times fa-2x" aria-hidden="true"></i>
+        <span class="sr-only">Nav Menu Close Button</span>
+      </button>
+
+      <div class="navlinks">
+        <ul>
+          <li><a href="#about" onclick="closeMenu()">About Me</a></li>
+          <li>
+            <a href="#samples" onclick="closeMenu()">Completed Projects</a>
+          </li>
+          <li>
+            <a
+              href="img/resume_anamika_nayak.pdf"
+              target="_blank"
+              onclick="closeMenu()"
+              >Resume</a
+            >
+          </li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main role="main">
+      <header id="intro" role="banner">
+        <h2>Hi, I'm Anamika</h2>
+        <h2>
+          In the ever-increasing world of automation, I felt my job as a Systems
+          cum Quality analyst (<em
+            >assisting end users with their queries and ensuring their
+            applications are working as expected</em
+          >) was not enough for me. Hence, I upgraded my skills by completing a
+          Full-Stack Web Development Program and is ready to apply my passion
+          and knowledge to develop, test or maintain web applications.
+        </h2>
+        <div class="arrows">
+          <a href="#about">
+            <i class="fas fa-chevron-down fa-2x arrow"></i>
+            <span class="sr-only">To "About me"</span>
+          </a>
+        </div>
+      </header>
+
+      <div class="anchor-landing" id="about"></div>
+      <section class="about">
+        <h2>About Me</h2>
+        <div class="aboutContainer">
+          <img
+            class="headshot"
+            src="img/anamika_profile_small.jpg"
+            alt="Anamika Profile Picture"
+          />
+          <p>
+            I have a Bachelors of Technology degree in Electronics and
+            Electrical Engineering from West Bengal University of Technology,
+            India. <br />Have worked in several Fortune 500 companies like Tata
+            Consultancy Services,Capgemini India where I have supported critical
+            financial applications for companies like Experian and Equifax.
+            <br />I also successfully completed Full-Stack Web Development
+            program from Thinkful, and have gained the knowledge to create
+            mobile-first responsive web applications, as well as the means to
+            test them.
+            <br />
+            A mother of one daughter, I spend most of my time helping with her
+            Pre-School homework or preparing her favorite food, when I am not
+            learning new technologies!
+          </p>
+        </div>
+        <div class="arrows">
+          <a href="#samples">
+            <i class="fas fa-chevron-down fa-2x arrow"></i>
+            <span class="sr-only white">To "Completed projects"</span>
+          </a>
+        </div>
+      </section>
+
+      <div class="anchor-landing" id="samples"></div>
+      <section class="samples">
+        <h2>Completed Projects</h2>
+
+        <div class="project">
+          <div class="projectText">
+            <h3>
+              <a
+                class="livepage"
+                target="_blank"
+                href="https://mommy-talks-app.herokuapp.com/"
+              >
+                Mommy Talks</a
+              >
+              <a target="_blank" href="https://github.com/anamika8/Mommy-Talks">
+                <i class="fab fa-github"></i>
+                <span class="sr-only">GitHub Repo</span>
+              </a>
+            </h3>
+            <p>
+              A platform for new or would-be mothers discuss their challenges
+              and seek advice. This app uses Javascript/JQuery for client side
+              code, Node.js and Express for the API unit tested using
+              Mocha/Chai, using MongoDB for the database.
+            </p>
+            <h4>Tools</h4>
+            <div class="tools">
+              <i class="icon-nodejs fa-4x"></i>
+              <i class="icon-javascript-alt fa-4x"></i>
+              <i class="icon-mongodb fa-4x"></i>
+              <i class="icon-jquery fa-4x"></i>
+            </div>
+          </div>
+          <a target="_blank" href="https://mommy-talks-app.herokuapp.com/">
+            <img
+              class="sample_img"
+              src="img/mommy_talks_large.png"
+              alt="mommy talks forum page"
+            />
+          </a>
+        </div>
+
+        <div class="project">
+          <div class="projectText">
+            <h3>
+              <a
+                class="livepage"
+                target="_blank"
+                href="https://anamika8.github.io/camping-planner/"
+              >
+                Camping Planner</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/anamika8/camping-planner"
+              >
+                <i class="fab fa-github"></i
+                ><span class="sr-only">GitHub Repo</span>
+              </a>
+            </h3>
+            <p>
+              Find out the best possible campsites available at US National Park
+              Service. This app uses data from the
+              <a href="https://www.nps.gov/subjects/digital/nps-data-api.htm"
+                >NPS API</a
+              >
+              and provides you detailed information of their campgrounds, for
+              you to make the best possible choice. You can compare the price,
+              amenities, operating hours. It also gives you a sneak-peek of the
+              actual campground site.
+            </p>
+            <h4>Tools</h4>
+            <div class="tools">
+              <i class="icon-html5 fa-4x"></i>
+              <i class="icon-css fa-4x"></i>
+              <i class="icon-javascript-alt fa-4x"></i>
+              <i class="icon-jquery fa-4x"></i>
+            </div>
+          </div>
+          <a target="_blank" href="https://lsauchter.github.io/ISS-Locator">
+            <img
+              class="sample_img"
+              src="img/camping_planner_large.jpg"
+              alt="Camping Planner Landing Page Image"
+            />
+          </a>
+        </div>
+
+        <div class="project">
+          <div class="projectText">
+            <h3>
+              <a
+                class="livepage"
+                target="_blank"
+                href="https://lsauchter.github.io/Harry-Potter-Quiz"
+              >
+                Harry Potter Quiz</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/lsauchter/Harry-Potter-Quiz"
+              >
+                <i class="fab fa-github"></i
+                ><span class="sr-only">GitHub Repo</span>
+              </a>
+            </h3>
+            <p>
+              A quiz program utilizing jQuery to allow users to submit answers,
+              receive feedback, and track their score.
+            </p>
+            <h4>Tools</h4>
+            <div class="tools">
+              <i class="icon-html5 fa-4x"></i>
+              <i class="icon-css fa-4x"></i>
+              <i class="icon-javascript-alt fa-4x"></i>
+              <i class="icon-jquery fa-4x"></i>
+            </div>
+          </div>
+          <a
+            class="livepage"
+            target="_blank"
+            href="https://anamika8.github.io/Harry-Potter-Quiz-App/"
+          >
+            <img
+              class="sample_img"
+              src="https://thoughtcatalog.files.wordpress.com/2015/05/aa02a7f2-2bdd-4315-84ec-e797e572c7ec.jpeg?w=786&h=524"
+              alt="Harry Potter quiz image"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer id="contact" role="contentinfo">
+      <a href="mailto:anamika13.ghosh@gmail.com">
+        <i class="far fa-envelope fa-3x"></i>
+        <span class="sr-only">Email</span>
+      </a>
+      <a target="_blank" href="https://github.com/anamika8">
+        <i class="fab fa-github-square fa-3x"></i>
+        <span class="sr-only">GitHub</span>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/anamikanayak/">
+        <i class="fab fa-linkedin fa-3x"></i>
+        <span class="sr-only">LinkedIn</span>
+      </a>
+      <a target="_blank" href="https://www.facebook.com/anamika.ghosh.5876">
+        <i class="fab fa-facebook-square fa-3x"></i>
+        <span class="sr-only">Facebook</span>
+      </a>
+      <div class="arrows">
+        <a href="#intro">
+          <i class="fas fa-chevron-up fa-2x arrow"></i>
+          <span class="sr-only">To "Intro"</span>
+        </a>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
