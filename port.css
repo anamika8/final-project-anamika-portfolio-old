@@ -11,15 +11,6 @@ body {
   line-height: 1.5;
 }
 
-/*h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Montserrat", sans-serif;
-}*/
-
 h2,
 h3,
 h4 {
@@ -82,6 +73,11 @@ nav {
   text-decoration: none;
 }
 
+.navlinks a:hover {
+  font-weight: bolder;
+  color: blue;
+}
+
 .navlinks .sr-only {
   font-weight: bolder;
 }
@@ -128,16 +124,10 @@ a ~ a {
 
 header {
   padding: 20% 5% 10% 5%;
-  /*font-family: "Montserrat", sans-serif;
-  background-color: rgb(31, 122, 140);*/
   background: url(img/hero.jpg) center no-repeat;
-  /*background: url("https://images.unsplash.com/photo-1510662620532-2bb9678c3490?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80")
-    center no-repeat;*/
   background-size: cover;
   color: black;
   height: 100vh;
-  /*text-shadow: -1px -1px 0 rgb(31, 122, 140), 1px -1px 0 rgb(31, 122, 140),
-    -1px 1px 0 rgb(31, 122, 140), 1px 1px 0 rgb(31, 122, 140);*/
 }
 
 header h1 {
@@ -199,7 +189,7 @@ header .fa-chevron-down,
 .samples {
   background-color: #cd853f;
   padding: 3% 0 5% 0;
-  color: #ffffff;
+  color: black;
 }
 
 .samples h2 {
@@ -211,10 +201,6 @@ header .fa-chevron-down,
   width: 90%;
   height: 90%;
 }
-
-/*.livepage {
-  color: #1f7a8c;
-}*/
 
 .project {
   border: 2px solid black;
@@ -240,8 +226,6 @@ header .fa-chevron-down,
 
 .tools {
   position: relative;
-  /*padding-right: 80px;
-  padding-right: 5px;*/
 }
 
 .jquery,
