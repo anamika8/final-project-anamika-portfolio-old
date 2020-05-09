@@ -200,6 +200,7 @@ header .fa-chevron-down,
   padding: 5% 0 2.5%;
   width: 90%;
   height: 90%;
+  border: 2px solid black;
 }
 
 .project {
