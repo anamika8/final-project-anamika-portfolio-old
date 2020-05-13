@@ -370,4 +370,8 @@ a {
     width: 50%;
     padding: 0;
   }
+
+  #intro p {
+    font-size: 1.5em;
+  }
 }
