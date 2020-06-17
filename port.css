@@ -264,6 +264,11 @@ a {
   border: none;
 }
 
+.info {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
 /*CSS for animated letters*/
 
 .ml11 {
@@ -325,6 +330,7 @@ a {
     display: inline;
     padding: 1%;
   }
+
 }
 
 @media screen and (min-width: 1000px) {
